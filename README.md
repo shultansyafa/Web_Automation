@@ -28,7 +28,6 @@ login.feature
 Feature: Login
 
 @valid-login
-
   Scenario: Login using valid email and password
   
     Given user is on login page
@@ -42,7 +41,6 @@ Feature: Login
     Then user is on homepage
 
   @invalid-login
-  
   Scenario: Login using invalid email and password
   
     Given user is on login page
