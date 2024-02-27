@@ -36,4 +36,6 @@ public class LoginPage {
     public void validateErrorAppear(String errorMessage) {
         assertTrue(driver.getPageSource().contains(errorMessage));
     }
+
+
 }

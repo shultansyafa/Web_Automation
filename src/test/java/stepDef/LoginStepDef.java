@@ -46,4 +46,9 @@ public class LoginStepDef extends BaseTest {
         loginPage.validateErrorAppear(errorMessage);
     }
 
+
+    @Then("When the user enters the password, the password is hidden \\(not visible)")
+    public void whenTheUserEntersThePasswordThePasswordIsHiddenNotVisible() {
+    }
+
 }
