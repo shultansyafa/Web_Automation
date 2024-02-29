@@ -49,6 +49,6 @@ public class LoginStepDef extends BaseTest {
 
     @Then("When the user enters the password, the password is hidden \\(not visible)")
     public void whenTheUserEntersThePasswordThePasswordIsHiddenNotVisible() {
-    }
 
+    }
 }
