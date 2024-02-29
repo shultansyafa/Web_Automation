@@ -22,10 +22,12 @@
 
 3.Contoh Test case
 
-'login.feature'
+'web.feature'
 
-@login
-Feature: Login
+@web
+Feature: web
+
+LOGIN:
 
 @web
 
@@ -93,6 +95,48 @@ Feature: Login
     When user click login button
     
     Then user able to see error message "Epic sadface: Sorry, this user has been locked out."
+
+    
+ HOMEPAGE:
+
+ @web
+ 
+ scenario:user adds a product to the cart
+
+    Given user is on login page
+   
+    And user input username with "standard_user"
+   
+    And user input password with "secret_sauce"
+     
+    And user click login button
+    
+    When user adds the first product to the cart
+    
+    Then user should see the product added to the cart
+
+   @web
+   
+   Scenario: user checks the shopping cart
+   
+     Given user is on login page
+     
+     And user input username with "standard_user"
+     
+     And user input password with "secret_sauce"
+     
+     And user click login button
+     
+     And user has added a product to the cart
+     
+     When user clicks on the shpping cart icon
+     
+     Then user should be redirected to the shopping cart page and see the added product
+   
+
+   
+
+  
 
 
 
