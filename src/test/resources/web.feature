@@ -1,5 +1,5 @@
-@login
-Feature: Login
+@web
+Feature: web
 
 @web
   Scenario: Login using valid email and password
